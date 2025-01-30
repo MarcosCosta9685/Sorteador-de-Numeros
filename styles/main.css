@@ -16,3 +16,63 @@ header {
     color: var(--content-primary);
   }
 }
+
+.content-box {
+  margin: 5.5625rem 0.875rem;
+  display: grid;
+  grid-template-columns: 46% 54%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2.375rem;
+
+  & .title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    & .text-gradient {
+      font: var(--overline);
+      text-transform: uppercase;
+      width: 31.75rem;
+      height: fit-content;
+      background: linear-gradient(to right, #C7C9CC 0%, #3D3D3D 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    & h1 {
+      font: var(--display-large);
+      color: var(--content-primary);
+      text-transform: uppercase;
+      letter-spacing: -0.04rem;
+    }
+  }
+
+  & .questions {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    margin-right: 7.625rem;
+
+    & .question {
+      display: flex;
+      align-items: flex-start;
+      gap: .5rem;
+
+      & p {
+        font: var(--paragraph-medium);
+        color: var(--content-brand);
+      }
+
+      & small {
+        font: var(--paragraph-small);
+        color: var(--content-secondary);
+      }
+    }
+  }
+
+}
