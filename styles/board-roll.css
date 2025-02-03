@@ -1,0 +1,71 @@
+.board {
+  & .board-roll {
+    width: 100%;
+    margin: 3.6875rem 0 3.6875rem 6.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: .25rem;
+
+      h2 {
+        font: var(--label-medium);
+        color: var(--content-primary);
+        text-transform: uppercase;
+        align-self: center;
+      }
+  
+      span {
+        font: var(--overline);
+        color: var(--content-secondary);
+        align-self: center;
+      }
+    }
+
+    .rolls {
+      display: flex;
+      gap: .25rem;
+      margin: 2.5rem auto;
+    }
+  }
+
+  button {
+    height: 3.5rem;
+    width: 100%;
+    background-color: var(--background-tertiary);
+    border: none;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    cursor: pointer;
+
+    span {
+      font: var(--label-small);
+      color: var(--content-primary);
+      text-transform: uppercase;
+    }
+
+    img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+}
+
+.roll {
+  height: 5.25rem;
+  width: 5.25rem;
+  background-color: var(--content-brand);
+  border-radius: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font: 800 3rem/1.5 'Roboto Mono';
+  color: var(--color-inverse);
+}
