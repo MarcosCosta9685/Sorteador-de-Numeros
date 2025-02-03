@@ -3,6 +3,8 @@ return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 const submitForm = document.querySelector('form')
+const rollAgain = document.getElementById('roll_again')
+
 const amount_value = document.querySelector('#amount')
 const min_value = document.querySelector('#min_value')
 const max_value = document.querySelector('#max_value')
@@ -15,6 +17,7 @@ amount.addEventListener(`focus`, () => amount.select());
 min_value.addEventListener(`focus`, () => min_value.select());
 max_value.addEventListener(`focus`, () => max_value.select());
 
+let interations = 1
 
 
 submitForm.onsubmit = (event) => {
@@ -30,13 +33,27 @@ submitForm.onsubmit = (event) => {
 
 
   if (repeat.checked) {
+    const numbersRolled = new Set()
 
+    while (numbersRolled.size < amount) {
+      const rolled = roll(min,  max)
+      numbersRolled.add(rolled)
+    }
+    
+    const numberList = Array.from(numbersRolled)
+    
+    for (let i = 0; i < numberList.length; i++) {
+      const newRoll = document.createElement('div')
+      newRoll.classList.add('roll')
+      newRoll.append(numberList[i])
+
+      boardRolls.appendChild(newRoll)
+    }
   }
 
   else {
     for (let i = 0; i < amount; i++) {
       const rolled = roll(min,  max)
-      console.log(rolled)
 
       const newRoll = document.createElement('div')
       newRoll.classList.add('roll')
@@ -45,11 +62,13 @@ submitForm.onsubmit = (event) => {
       boardRolls.appendChild(newRoll)
     }
   }
+
+  rollAgain.addEventListener('click', function(event) {
+    rollingBoard.classList.add('hide')
+    selectBoard.classList.remove('hide')
+
+    while (boardRolls.firstChild) {
+      boardRolls.removeChild(boardRolls.firstChild);
+    }
+  })
 }
-
-
-
-
-
-/* const rolled = roll(min,  max)
- console.log(rolled) */
