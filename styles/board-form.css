@@ -88,7 +88,7 @@
         }
       }
 
-      & .number-repeat {
+       & .number-repeat {
         display: flex;
         gap: .5rem;
         align-items: center;
