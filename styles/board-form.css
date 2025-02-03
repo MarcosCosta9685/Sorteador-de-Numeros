@@ -1,6 +1,6 @@
 .select {
+  width: 100%;
   & .board-form {
-    width: 100%;
     margin: 2.125rem 0 2.125rem 6.75rem;
     display: flex;
     flex-direction: column;
