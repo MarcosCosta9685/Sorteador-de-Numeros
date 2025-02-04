@@ -30,6 +30,7 @@
       gap: .25rem;
       margin: 2.5rem auto;
       justify-content: center;
+      animation: gapAnimation 2.5s;
     }
   }
 
