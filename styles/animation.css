@@ -1,0 +1,42 @@
+@keyframes buttonHover {
+  0% {
+    background-image: linear-gradient(var(--background-tertiary), var(--background-tertiary)),
+    linear-gradient(-87deg, #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+  }
+
+  20% {
+    background-image: linear-gradient(var(--background-tertiary), var(--background-tertiary)),
+    linear-gradient(-177deg ,#77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+  }
+
+  40% {
+    background-image: linear-gradient(var(--background-tertiary), var(--background-tertiary)),
+    linear-gradient(-200deg ,#77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+  }
+
+  60% {
+    background-image: linear-gradient(var(--background-tertiary), var(--background-tertiary)),
+    linear-gradient(-87deg ,#77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+  }
+
+  80% {
+    background-image: linear-gradient(var(--background-tertiary), var(--background-tertiary)),
+    linear-gradient(-87deg , #91A1FA 14%, #D586E0 33%, #E9A9B3 68%, #D1DC97 85%, #77C0AF 100%);
+  }
+
+  100% {
+    background-image: linear-gradient(var(--background-tertiary), var(--background-tertiary)),
+    linear-gradient(-87deg, #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+  }
+}
+
+@keyframes buttonArrow {
+  60% {
+    transform: translateX(60%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+

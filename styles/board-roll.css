@@ -55,6 +55,16 @@
       height: 1.5rem;
       width: 1.5rem;
     }
+
+  &:hover {
+    border-radius: .5rem;
+    border: double 0.1rem transparent;
+    background-image: linear-gradient(var(--background-tertiary), var(--background-tertiary)),
+    linear-gradient(#77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: buttonHover 1s ease infinite forwards;
+  }      
   }
 }
 

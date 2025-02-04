@@ -1,5 +1,6 @@
 .select {
   width: 100%;
+
   & .board-form {
     margin: 2.125rem 0 2.125rem 6.75rem;
     display: flex;
@@ -38,6 +39,7 @@
             font: var(--label-small);
             color: var(--content-secondary);
             text-transform: uppercase;
+            transition: all 0.3s ease;
           }
 
           & input {
@@ -77,68 +79,14 @@
             }
 
             & input {
-              border-radius: .5rem;
               border: double 2px transparent;
+              border-radius: .5rem;
               background-image: linear-gradient(var(--background-tertiary), var(--background-tertiary)),
                 linear-gradient(#77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
               background-origin: border-box;
               background-clip: content-box, border-box;
             }
           }
-        }
-      }
-
-       & .number-repeat {
-        display: flex;
-        gap: .5rem;
-        align-items: center;
-
-        & .checkbox-wrapper {
-          width: 1.875rem;
-          height: 1.25rem;
-          background-color: var(--content-tertiary);
-          border-radius: 1rem;
-          position: relative;
-          cursor: pointer;
-
-          & input,
-          & input:focus,
-          & input:hover {
-            all: unset;
-            position: absolute;
-            inset: 0;
-
-            background-color: var(--content-primary);
-            width: 0.875rem;
-            height: 0.875rem;
-            border-radius: 100%;
-            left: 3px;
-            top: 3px;
-          }
-
-          &:has(:checked) {
-            background: linear-gradient(to right, #D586E0 0%, #91A1FA 98.93%);
-
-            & input,
-            & input:focus,
-            & input:hover {
-            all: unset;
-            position: absolute;
-            inset: 0;
-
-            background-color: var(--content-primary);
-            width: 0.875rem;
-            height: 0.875rem;
-            border-radius: 100%;
-            left: 13px;
-            top: 3px;
-          }
-          }
-        }
-
-        & label {
-          font: 400 0.75rem/1.5 'Inter', sans-serif;
-          color: var(--content-primary);
         }
       }
 
@@ -158,15 +106,21 @@
         & span {
           font: var(--label-small);
           color: var(--content-primary);
+          text-transform: uppercase;
         }
 
         &:hover {
           border-radius: .5rem;
-              border: double 0.1rem transparent;
-              background-image: linear-gradient(var(--background-tertiary), var(--background-tertiary)),
-                linear-gradient(#77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
-              background-origin: border-box;
-              background-clip: content-box, border-box;
+          border: double 0.1rem transparent;
+          background-image: linear-gradient(var(--background-tertiary), var(--background-tertiary)),
+            linear-gradient(#77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+          background-origin: border-box;
+          background-clip: content-box, border-box;
+          animation: buttonHover 1s ease infinite forwards;
+
+          img {
+            animation: buttonArrow 2s ease infinite;
+          }
         }
       }
     }
