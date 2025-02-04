@@ -1,0 +1,29 @@
+.roll {
+  height: 6.25rem;
+  width: 6.25rem;
+}
+
+.dice {
+  height: 6.25rem;
+  width: 6.25rem;
+  border-radius: 1.75rem;
+  animation: diceAnimation 2.5s;
+  position: absolute;
+}
+
+.dice-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6.25rem;
+  width: 6.25rem;
+  color: var(--content-brand);
+  font: 700 4rem/1.5 'Roboto Mono';
+  position: relative;
+}
+
+.dice-text {
+  font: 700 48px/1.5 sans-serif;
+  color: #C58DE7;
+  animation: textAnimation 2.5s;
+}

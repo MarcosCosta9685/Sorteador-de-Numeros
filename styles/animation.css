@@ -40,3 +40,105 @@
   }
 }
 
+@keyframes diceAnimation {
+  0% {
+    background-color: #C58DE7;
+    scale: 0;
+  }
+
+  2% {
+    scale: 1.3;
+  }
+
+  6% {
+    scale: 1.2;
+  }
+
+  10% {
+    background-color: #C58DE7;
+    transform: rotate(18deg);
+    scale: 1.2;
+  }
+
+  16% {
+    background-color: #C58DE7;
+    transform: rotate(36deg);
+    scale: 1.2;
+  }
+
+  24% {
+    background-color: #C58DE7;
+    transform: rotate(54deg);
+    scale: 1.2;
+  }
+
+  32% {
+    background-color: #C58DE7;
+    transform: rotate(72deg);
+    scale: 1.2;
+  }
+
+  40% {
+    background-color: #C58DE7;
+    transform: rotate(90deg);
+    scale: 1.2;
+  }
+
+  48% {
+    background-color: #C58DE7;
+    transform: rotate(108deg);
+    scale: 1.2;
+  }
+
+  56% {
+    background-color: #C58DE7;
+    transform: rotate(126deg);
+    scale: 1.2;
+  }
+
+  64% {
+    background-color: #C58DE7;
+    transform: rotate(144deg);
+    scale: 1.2;
+  }
+
+  72% {
+    background-color: #C58DE7;
+    transform: rotate(162deg);
+    scale: 1.2;
+  }
+
+  79.9% {
+    opacity: 1;
+  }
+
+  80% {
+    background-color: #C58DE7;
+    transform: rotate(180deg);
+    scale: 1;
+    opacity: 0;
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  31% {
+    opacity: 0;
+  }
+
+  32% {
+    opacity: 1;
+    color: black;
+  }
+
+  72% {
+    color: black;
+  }
+
+  100% {
+    color: #C58DE7;
+  }
+}

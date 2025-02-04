@@ -67,16 +67,3 @@
   }      
   }
 }
-
-.roll {
-  height: 5.25rem;
-  width: 5.25rem;
-  background-color: var(--content-brand);
-  border-radius: 1.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font: 800 3rem/1.5 'Roboto Mono';
-  color: var(--color-inverse);
-}
