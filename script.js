@@ -23,6 +23,8 @@ function addRoll(roll) {
   rollDiv.appendChild(diceBoxDiv)
 
   rollsContainer.appendChild(rollDiv)
+
+  diceDiv.style.animation = 'diceAnimation 3s';
   return
 }
 
