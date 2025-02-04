@@ -7,7 +7,7 @@
   height: 6.25rem;
   width: 6.25rem;
   border-radius: 1.75rem;
-  animation: diceAnimation 2.5s;
+  animation: diceAnimation 3s;
   position: absolute;
 }
 
@@ -25,5 +25,5 @@
 .dice-text {
   font: 700 48px/1.5 sans-serif;
   color: #C58DE7;
-  animation: textAnimation 2.5s;
+  animation: textAnimation 3s;
 }

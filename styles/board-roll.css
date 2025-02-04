@@ -30,7 +30,7 @@
       gap: .25rem;
       margin: 2.5rem auto;
       justify-content: center;
-      animation: gapAnimation 2.5s;
+      animation: gapAnimation 3s;
     }
   }
 
@@ -45,6 +45,7 @@
     justify-content: center;
     gap: .5rem;
     cursor: pointer;
+    animation: rollAgain 4s;
 
     span {
       font: var(--label-small);
@@ -65,6 +66,7 @@
     background-origin: border-box;
     background-clip: content-box, border-box;
     animation: buttonHover 1s ease infinite forwards;
+    animation: rollAgain 4s;
   }      
   }
 }
